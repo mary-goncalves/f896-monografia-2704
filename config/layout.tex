@@ -1,0 +1,66 @@
+%---- Tamanho das Paginas ----
+
+%\oddsidemargin  =   2 mm
+%\evensidemargin = -12 mm
+\oddsidemargin  =  1 mm  %-5
+\evensidemargin =  1 mm %-5
+\textwidth      = 170 mm %170
+\textheight     = 215 mm %235
+\topmargin      = 8 mm %-10
+\topskip        =  10  mm %10
+\headsep        =  6 mm %10
+\footskip       =   0 mm
+
+%---- Espaçamento entre as linhas ----
+
+\newcommand{\blst}{1.5} %{1.15}
+\renewcommand{\baselinestretch}{\blst}
+
+%---- Formato das Paginas ----
+
+\pagestyle{headings}
+\raggedbottom                 %  impede o ajustamento vertical
+
+%---- Especificacoes sobre figuras ----
+
+\setcounter  {topnumber}      {2}
+\setcounter  {bottomnumber}   {2}
+\setcounter  {totalnumber}    {2}
+\renewcommand{\topfraction}   {1}
+\renewcommand{\bottomfraction}{1}
+\renewcommand{\textfraction}  {0}
+
+%---- Formatando os títulos ----
+
+\usepackage[bf,rm,compact]{titlesec}
+\font\bigrm = cmr10 at 40pt
+\titleformat{\chapter}[display]
+            {\normalfont\huge\sffamily}
+%            {\thispagestyle{empty}\normalfont\huge\sffamily}
+            {\rightline{\normalfont\bigrm{\thechapter}}}
+            {-2cm}
+            {\bfseries}
+            [{\vspace{-5mm}\hrulefill\\[.8ex]}]
+\titlespacing{\chapter}
+            {0cm}{0.5cm}{1.5cm}
+
+%---- Headers ----
+
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\renewcommand{\chaptermark}[1]{\markboth{\thechapter.\ #1}{} }
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\lhead[\fancyplain{}{\bfseries\thepage}]
+       {\fancyplain{}{\small\slshape\bfseries\leftmark}}
+\rhead[\fancyplain{}{\small\slshape\bfseries\rightmark}]
+       {\fancyplain{}{\bfseries\thepage}}
+\cfoot[\fancyplain{\bfseries\thepage}{}]
+       {\fancyplain{\bfseries\thepage}{}}
+\renewcommand{\headrulewidth}{0.3pt}
+
+%---- Especificacoes Numeração ----
+
+\setcounter{secnumdepth}{1}   %  numera apenas ate as seções
+\setcounter{tocdepth}{1}      %  inclui no índice somente as seções
+
+%%\input{hifen.tex}
