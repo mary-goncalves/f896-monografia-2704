@@ -74,26 +74,37 @@ As características dos espectros de massa de outros metais alcalinos e também 
 
 \section{Estrutura eletrônica \textit{shell model} para \textit{clusters} esféricos} \label{section_shell_model}
 
-Pretendemos apresentar uma visão geral das características do sistema eletrônico \textit{shell model}.
+Pretendemos apresentar uma visão geral das características do sistema eletrônico \textit{shell model} ou modelo de concha.
 
-O espectro de de massa da \ref{fig:espec_na} sugere que, os elétrons de valência nos \textit{clusters} de sódio são independentes e estão confinados em um potencial esfericamente simétrico. Assim como os átomos, as camadas eletrônicas de um \textit{cluster} com um número exato de elétrons para formar uma estrutura geometria poliédrica fechada, é muito estável. Assim que um átomo for adicionado a nanoestrutura, seu elétron de valência ocupará um estado com energia maior e assim a estabilidade do \textit{cluster} será reduzida, ocasionando uma rejeição deste estado e reduzindo sua sua abundância no espectro e isso explica a grade abundância após cada número de fechamento da casca.
+O espectro de de massa da \ref{fig:espec_na} sugere que, os elétrons de valência nos \textit{clusters} de sódio são independentes e estão confinados em um potencial esfericamente simétrico. Assim como os átomos, as camadas eletrônicas de um \textit{cluster} com um número exato de elétrons para formar uma estrutura geometria poliédrica fechada, que o torna muito estável. Assim que um átomo for adicionado a nanoestrutura, seu elétron de valência ocupará um estado com energia maior e assim a estabilidade do \textit{cluster} será reduzida, ocasionando uma rejeição deste estado e reduzindo sua sua abundância no espectro e isso explica a grade abundância após cada número de fechamento da casca.
 
-Os números quânticos dos \textit{cluster} metálicos, são caracterizados de modo que cada casca é possuí um número quântico radial \textit{n} e o momento angular \textit{l}. Para um dado número quântico \textit{l}, o estado mais baixo tem $n = 1$, e assim por diante.
+Os números quânticos dos \textit{cluster} metálicos, são caracterizados de modo que cada casca possuí um número quântico radial \textit{n} e o momento angular \textit{l}. Para um dado número quântico \textit{l}, o estado mais baixo tem $n = 1$, e assim por diante.
 
 
-Uma abordagem com respaldo na mecânica quântica e que fornece uma descrição boa do comportamento observado na Figura \ref{fig:espec_na}, é considerarmos um elétron se movendo em um campo médio onde calculamos considerando que eles são partículas independentes movendo-se em um potencial parametrizado. O parâmetro básico do modelo é o raio de Wigner-Seitz, $r_{s}$, o raio de uma esfera contendo um elétron. O raio de um átomo de \textit{N} (ou elétron de valência) é dado por:
+Uma primeira aproximação com abordagem quântica, é o "Modelo de Gota" que fornece uma descrição boa do comportamento observado na Figura \ref{fig:espec_na}. Considerando um elétron se movendo em um campo médio, dado que eles são partículas independentes movendo-se em um potencial parametrizado. O \textit{cluster} é representado como uma esfera de raio \textit{R}, que está relacionada com número \textit{N} de átomos e o raio de Wigner-Seitz, $r_{s}$.
+
 
 \begin{equation}
     R = r_{s}(N)^{\frac{1}{3}}
 \end{equation}
 
-É útil considerar a estrutura eletrônica surgindo com alguns potenciais simples. Para potenciais simétricos esfericamente, a função de onda é separável em uma parte radial e angular:
+O raio de Wigner-Seitz, $r_{s}$, é definido como o raio do volume ocupado por cada elétron de valência, isso é equivalente ao volume ocupado por cada átomo em um nanometal monovalente.
+A estrutura interna do \textit{cluster} não é levada em consideração neste modelo. Este modelo é equivalente à teoria elétrons livre de sólidos. No entanto, a caixa sólida tem dimensões macroscópicas e níveis energéticos contínuos, enquanto o modelo para o \textit{cluster}, situado em nanoescala, os níveis de energia são discretos. Os primeiros níveis de energia para elétrons que não interagem em uma caixa esférica e o número de elétrons necessários para o preenchimento completo das camadas são $n= 2,8,18,20,34,40,58$ \cite{livro_cap16_Misra2012527}. Note que esses números condizem com os picos de maior abundância apontados no espectro da Figura \ref{fig:espec_na}.
+
+
+%No modelo de jelium esférico, os núcleos iônicos são substituídos por um fundo de carga positiva uniforme de raio RR.  O parâmetro básico do modelo é o raio de Wigner-Seitz rsrs definido na Eq. (16,1). Além disso, a função de onda para um potencial esfericamente simétrico pode ser escrita como
+
+
+
+Para o modelo de concha esféricas, os núcleos iônicos são substituídos por carga positiva uniforme de raio \textit{R}, os elétrons são tratados como partículas livres, movendo-se em um potencial parametrizado. O parâmetro básico do modelo é o raio de Wigner-Seitz, e a função onda para um potencial esfericamente simétrico pode ser escrita como:
 
 \begin{equation}
     \psi_{ n,l,m}(r, \theta, \phi) = R_{nl}(r)Y_{lm}(\theta, \phi)
 \end{equation}
 
-com os números quânticos familiares e $2(2l+1)$ de degenerescência (incluindo spin) em relação a \textit{m}. Três potenciais úteis para o estudo da física de \textit{cluster}, são os harmônicos, o poço quadrado e os potenciais Woods-Saxon mostrados na Figura \ref{fig:pocos}.
+Existem três potenciais úteis para o estudo da física de \textit{cluster}: potencial do oscilador harmônico, potencial esférico de poço quadrado e potencial Woods-Saxon. Estes potênciais são mostrados graficamente na Figura \ref{fig:pocos}.
+
+\subsubsection{Potencial do Oscilador Harmônico:}
 
 O potencial mais simples é o potencial do oscilador harmônico $V_{r}$:
 
@@ -103,9 +114,44 @@ O potencial mais simples é o potencial do oscilador harmônico $V_{r}$:
 
 o potencial do poço quadrado esférico (constante para $r<R$ e infinito para os demais). Como podemos ver na primeira coluna da Figura \ref{fig:pocos} os níveis de energia para o potencial do oscilador harmônico são igualmente espaçados, altamente degenerados e são rotulados pelo número quântico \textit{v}.
 
+
+A energia do potencial do oscilador harmônico é dada por:
+
 \begin{equation}
     E_{v}= \left(\frac{3}{2}+v\right)h\omega_0
 \end{equation}
+
+Os números quânticos $(n,l)$ podem ser usados para qualquer potencial esfericamente simétrico. Assim, todos os orbitais com o mesmo valor de $(2n+l)$ são degenerados e as energias são escritas em termos do único número quântico $(2v+l-2)$. A energia potencial devido à carga de fundo é \cite{livro_cap16_Misra2012527}:
+\begin{equation}
+    \hbox{V}(r)
+= \left\{ \begin{array}{lll}
+\frac{3e^2N}{8\pi\epsilon_0R^3}\left(\frac{r^2}{3}-R^2\right) & \hbox{se} & r<R \\
+e^2 Z & \hbox{} &  \\
+\frac{e^2N}{4\pi\epsilon_0r} & \hbox{se} & r > R
+\end{array}\right.
+\end{equation}
+
+\subsubsection{Potencial Esférico de Poço Quadrado:}
+
+O potencial esférico de poços quadrados é descrito por:
+
+
+
+\begin{equation}
+ V(r) = \left\{\begin{array}{lll}
+c & \hbox{se} & r < R \\
+\infty & \hbox{se}  & \forall r
+\end{array}\right.
+\end{equation}
+
+
+
+
+
+
+
+
+
 
 
 \begin{figure}
